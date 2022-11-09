@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--secondary-backgroung-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__logo-text {
+  color: var(--primary-white-color);
+}
+
+// Address
+
+.address-wrap {
+  margin-right: 70px;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
+  &.location {
+    color: var(--primary-white-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+}
+
+// Subscribe
+.follow__subtitle {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.follow__social {
+  display: flex;
+  justify-content: center;
+}
+
+.follow__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.follow__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--icons-bg-color);
+  }
+}
+
+.follow__social-icon {
+  fill: currentColor;
+}
+
+// newsletters
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subscribe__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__btn-icon {
+  display: block;
+  margin-left: 10px;
+}

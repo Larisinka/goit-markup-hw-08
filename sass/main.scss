@@ -1,0 +1,21 @@
+@import "./utils/vars";
+
+@import "./base/normalize";
+@import "./base/reset";
+
+@import "./base/general";
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/input";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/services";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio-page";
+@import "./components/footer";
+
+@import "./components/backdrop";

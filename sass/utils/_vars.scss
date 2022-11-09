@@ -1,0 +1,26 @@
+:root {
+  --logo-color: #000;
+  --text-color: #212121;
+  --link-color: #2196f3;
+  --button-color: #188ce8;
+  --primary-white-color: #ffffff;
+  --primary-text-color: #757575;
+
+  /* backgroung colors */
+  --background-white-color: #ffffff;
+  --primary-background-color: #f5f4fa;
+  --secondary-backgroung-color: #2f303a;
+
+  /* icons colors */
+  --icons-color: #afb1b8;
+  --icons-bg-color: #2196f3;
+  --icons-hover-color: #fff;
+
+  /*  */
+  --items: 4;
+  --indent: 30px;
+
+  /* animation */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-slow: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,18 +1,46 @@
 .team {
+  @include section;
+
   background: var(--primary-background-color);
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    @include section(94px, 94px);
+  }
 }
 
 .team__title {
+  // Mobile and tablet styles
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
-  display: flex;
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    display: block;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    --items: 2;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    --items: 4;
+  }
 }
 
 .team__item {
@@ -20,11 +48,24 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .team__wrap {
+  // Mobile and tablet styles
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__member {

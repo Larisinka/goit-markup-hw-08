@@ -5,12 +5,29 @@
 }
 
 .footer__wrap {
+  // Mobile styles
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -18,15 +35,32 @@
   color: var(--primary-white-color);
 }
 
-// Address
+// Address section
 
 .address-wrap {
-  margin-right: 70px;
+  // Mobile and Tablet styles
+  text-align: center;
+  margin-bottom: 60px;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .address__item {
+  // Mobile and Tablet styles
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -46,7 +80,20 @@
   }
 }
 
-// Subscribe
+// Follow section
+
+.follow {
+  // Mobile and Tablet styles
+  text-align: center;
+  margin-bottom: 60px;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .follow__subtitle {
   font-family: "Roboto";
   font-weight: 700;
@@ -89,9 +136,22 @@
   fill: currentColor;
 }
 
-// newsletters
+// Subscribe section
+
 .subscribe {
-  margin-left: auto;
+  // Only for Mobile and Tablet styles
+  @media screen and (max-width: $pre-desc) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    margin-left: auto;
+  }
 }
 
 .subscribe__title {
@@ -105,15 +165,23 @@
 }
 
 .subscribe__form {
+  // Mobile and Tablet styles
   display: flex;
-  gap: 12px;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }
 
 .subscribe__input {
   height: 50px;
-  width: 358px;
+  width: 450px;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
@@ -128,6 +196,16 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  // For Mobile under 480px styles
+  @media screen and (max-width: $mob - 1) {
+    width: 100%;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    width: 358px;
   }
 }
 

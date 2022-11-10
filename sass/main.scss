@@ -1,9 +1,13 @@
-@import "./utils/vars";
-
 @import "./base/normalize";
 @import "./base/reset";
 
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/breakpoints";
+@import "./utils/placeholders";
+
 @import "./base/general";
+@import "./base/container";
 
 @import "./components/logo";
 @import "./components/button";

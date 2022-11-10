@@ -1,6 +1,8 @@
 .services {
-  &.section {
-    padding-top: 0;
+  @include section(0px, 94px);
+
+  @media screen and (max-width: $pre-desc) {
+    display: none;
   }
 }
 

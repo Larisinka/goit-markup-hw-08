@@ -139,6 +139,11 @@
 // Subscribe section
 
 .subscribe {
+  // For Mobile under 480px styles
+  @media screen and (max-width: $pre-mob) {
+    width: 100%;
+  }
+
   // Only for Mobile and Tablet styles
   @media screen and (max-width: $pre-desc) {
     display: flex;
@@ -165,6 +170,11 @@
 }
 
 .subscribe__form {
+  // For Mobile under 480px styles
+  @media screen and (max-width: $pre-mob) {
+    width: 100%;
+  }
+
   // Mobile and Tablet styles
   display: flex;
   flex-direction: column;
@@ -199,7 +209,7 @@
   }
 
   // For Mobile under 480px styles
-  @media screen and (max-width: $mob - 1) {
+  @media screen and (max-width: $pre-mob) {
     width: 100%;
   }
 

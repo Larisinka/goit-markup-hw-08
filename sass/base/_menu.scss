@@ -35,7 +35,7 @@
   background-color: #fff;
 
   transform: translateX(100%);
-  transition: transform var(--animation-slow);
+  transition: transform var(--animation);
 
   &.is-open {
     transform: translateX(0);

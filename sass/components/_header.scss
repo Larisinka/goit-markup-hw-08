@@ -5,12 +5,27 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $pre-tabl) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__logo {
-  margin-right: 94px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 /* navigation  */
@@ -20,7 +35,15 @@
 }
 
 .nav__list {
-  display: flex;
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    display: none;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .nav__item {
@@ -71,29 +94,87 @@
 
 /* header contacts */
 .header-contacts {
-  margin-left: auto;
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    display: none;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-left: auto;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    flex-direction: row;
+    padding: 0;
+    margin-left: auto;
+  }
+}
+
+.header-contacts__item {
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    display: none;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .header__contacts-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--primary-text-color);
-  transition: color var(--animation);
+  // Mobile styles
+  @media screen and (max-width: $pre-tabl) {
+    display: none;
+  }
 
-  &:hover,
-  &:focus {
-    color: var(--link-color);
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--link-color);
+    }
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .header__contacts-icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    margin-right: 10px;
+  }
 }

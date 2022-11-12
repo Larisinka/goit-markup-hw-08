@@ -1,11 +1,20 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--link-color);
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: left;
+  }
 }
 
 .logo-text {

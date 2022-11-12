@@ -1,12 +1,12 @@
 .button {
-  width: 216px;
+  width: 200px;
   height: 50px;
   background-color: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
@@ -16,5 +16,10 @@
   &:hover,
   &:focus {
     background-color: var(--button-color);
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    width: 216px;
   }
 }

@@ -7,8 +7,13 @@ $desc: 1200px;
 @media screen and (max-width: $desc) {
 }
 
+// Tablet styles
 @media screen and (min-width: $tablet) {
 }
 
 @media screen and (min-width: $tablet) and (max-width: $desc) {
+}
+
+// Desctop styles
+@media screen and (min-width: $desc) {
 }

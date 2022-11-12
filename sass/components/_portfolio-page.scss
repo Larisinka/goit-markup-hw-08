@@ -2,17 +2,42 @@
 /* portfolio.html styles  */
 /*  */
 
+.portfolio {
+  @include section;
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    @include section(94px, 94px);
+  }
+}
+
 /* portfolio filter */
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: $pre-tabl) {
+    margin-bottom: 15px;
   }
 }
 
@@ -44,10 +69,20 @@
 /* portfolio examples */
 
 .portfolio__examples {
-  --items: 3;
+  --items: 1;
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+
+  // Tablet styles
+  @media screen and (min-width: $tablet) {
+    --items: 2;
+  }
+
+  // Desctop styles
+  @media screen and (min-width: $desc) {
+    --items: 3;
+  }
 }
 
 .portfolio__item {

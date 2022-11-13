@@ -681,87 +681,91 @@
 
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button
-          class="close__btn"
-          type="button"
-          data-modal-close
-          aria-label="close modal window"
-        >
-          <svg class="close__icon" width="11px" height="11px">
-            <use href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-
-        <form class="modal__form">
-          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
-
-          <label for="user-name" class="form__label">Ім'я</label>
-          <div class="form__input-wrapper">
-            <input
-              type="text"
-              name="name"
-              id="user-name"
-              class="input form__input"
-            />
-            <svg class="form__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-user"></use>
+      <div class="modal-wrap">
+        <div class="modal">
+          <button
+            class="close__btn"
+            type="button"
+            data-modal-close
+            aria-label="close modal window"
+          >
+            <svg class="close__icon" width="11px" height="11px">
+              <use href="./images/icons.svg#icon-cross"></use>
             </svg>
-          </div>
+          </button>
 
-          <label for="user-tel" class="form__label">Телефон</label>
-          <div class="form__input-wrapper">
-            <input
-              type="tel"
-              name="tel"
-              id="user-tel"
-              class="input form__input"
-            />
-            <svg class="form__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-          </div>
+          <form class="modal__form">
+            <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
 
-          <label for="user-mail" class="form__label">Пошта</label>
-          <div class="form__input-wrapper">
-            <input
-              type="email"
-              name="mail"
-              id="user-mail"
-              class="input form__input"
-            />
-            <svg class="form__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-          </div>
+            <label for="user-name" class="form__label">Ім'я</label>
+            <div class="form__input-wrapper">
+              <input
+                type="text"
+                name="name"
+                id="user-name"
+                class="input form__input"
+              />
+              <svg class="form__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
 
-          <label for="comment" class="form__label">Коментар</label>
-          <textarea
-            name="message"
-            id="comment"
-            placeholder="Введіть текст"
-            class="input form__textarea"
-          ></textarea>
+            <label for="user-tel" class="form__label">Телефон</label>
+            <div class="form__input-wrapper">
+              <input
+                type="tel"
+                name="tel"
+                id="user-tel"
+                class="input form__input"
+              />
+              <svg class="form__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
 
-          <label class="form__check-label">
-            <input
-              type="checkbox"
-              name="check"
-              class="form__check-input visually-hidden"
-            />
-            <svg class="form__check-icon" width="16" height="15">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            <span class="form__check-text">
-              Погоджуюся з розсилкою та приймаю
-              <a class="form__check-link" href="#" target="_blank">
-                Умови договору
-              </a>
-            </span>
-          </label>
+            <label for="user-mail" class="form__label">Пошта</label>
+            <div class="form__input-wrapper">
+              <input
+                type="email"
+                name="mail"
+                id="user-mail"
+                class="input form__input"
+              />
+              <svg class="form__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
 
-          <button type="submit" class="button form__button">Відправити</button>
-        </form>
+            <label for="comment" class="form__label">Коментар</label>
+            <textarea
+              name="message"
+              id="comment"
+              placeholder="Введіть текст"
+              class="input form__textarea"
+            ></textarea>
+
+            <label class="form__check-label">
+              <input
+                type="checkbox"
+                name="check"
+                class="form__check-input visually-hidden"
+              />
+              <svg class="form__check-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <span class="form__check-text">
+                Погоджуюся з розсилкою та приймаю
+                <a class="form__check-link" href="#" target="_blank">
+                  Умови договору
+                </a>
+              </span>
+            </label>
+
+            <button type="submit" class="button form__button">
+              Відправити
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 

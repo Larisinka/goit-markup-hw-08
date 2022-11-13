@@ -2,9 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  overflow-y: auto;
 
   z-index: 10;
 
@@ -25,8 +24,15 @@
   }
 }
 
+.modal-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal {
   position: relative;
+  margin: 10px;
   padding: 40px;
   max-width: 450px;
 

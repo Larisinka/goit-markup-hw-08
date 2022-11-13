@@ -4,11 +4,50 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg-img.jpg) no-repeat center/cover,
+    url(../images/hero/hero-bg-480@1x.jpg) no-repeat center/cover,
     var(--secondary-backgroung-color);
 
-  // Desctop styles
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg-480@2x.jpg) no-repeat center/cover,
+      var(--secondary-backgroung-color);
+  }
+
+  // Tablet images
+  @media screen and (min-width: 481px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg-768@1x.jpg) no-repeat center/cover,
+      var(--secondary-backgroung-color);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-bg-768@2x.jpg) no-repeat center/cover,
+        var(--secondary-backgroung-color);
+    }
+  }
+
+  // Desctop images
+  @media screen and (min-width: 769px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg-1200@1x.jpg) no-repeat center/cover,
+      var(--secondary-backgroung-color);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-bg-1200@2x.jpg) no-repeat center/cover,
+        var(--secondary-backgroung-color);
+    }
+  }
+
+  // Hero_wrap Desctop styles
   @media screen and (min-width: $desc) {
     @include section(200px, 200px);
   }

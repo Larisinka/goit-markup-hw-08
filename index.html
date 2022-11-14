@@ -208,20 +208,42 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list cards-set">
             <li class="team__item cards-set-item">
-              <img
-                srcset="
-                  ./images/team/team-1-270@1x.jpg 270w,
-                  ./images/team/team-1-354@1x.jpg 354w,
-                  ./images/team/team-1-450@1x.jpg 450w,
-                  ./images/team/team-1-540@2x.jpg 540w,
-                  ./images/team/team-1-708@2x.jpg 708w,
-                  ./images/team/team-1-900@2x.jpg 900w
-                "
-                class="team__member-picture"
-                src="./images/team/team-1-270@1x.jpg"
-                alt="Ігор Дем'яненко"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1-1200@1x.jpg 1x,
+                    ./images/team/team-1-1200@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1-768@1x.jpg 1x,
+                    ./images/team/team-1-768@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1-480@1x.jpg 1x,
+                    ./images/team/team-1-480@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__member-picture"
+                  src="./images/team/team-1-480@1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="team__member-position">Product Designer</p>
@@ -278,20 +300,42 @@
               </div>
             </li>
             <li class="team__item cards-set-item">
-              <img
-                srcset="
-                  ./images/team/team-2-270@1x.jpg 270w,
-                  ./images/team/team-2-354@1x.jpg 354w,
-                  ./images/team/team-2-450@1x.jpg 450w,
-                  ./images/team/team-2-540@2x.jpg 540w,
-                  ./images/team/team-2-708@2x.jpg 708w,
-                  ./images/team/team-2-900@2x.jpg 900w
-                "
-                class="team__member-picture"
-                src="./images/team/team-2-270@1x.jpg"
-                alt="Ольга Рєпіна"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2-1200@1x.jpg 1x,
+                    ./images/team/team-2-1200@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2-768@1x.jpg 1x,
+                    ./images/team/team-2-768@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2-480@1x.jpg 1x,
+                    ./images/team/team-2-480@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__member-picture"
+                  src="./images/team/team-2-480@1x.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p class="team__member-position">Frontend Developer</p>
@@ -348,21 +392,42 @@
               </div>
             </li>
             <li class="team__item cards-set-item">
-              <img
-                srcset="
-                  ./images/team/team-3-270@1x.jpg 270w,
-                  ./images/team/team-3-354@1x.jpg 354w,
-                  ./images/team/team-3-450@1x.jpg 450w,
-                  ./images/team/team-3-540@2x.jpg 540w,
-                  ./images/team/team-3-708@2x.jpg 708w,
-                  ./images/team/team-3-900@2x.jpg 900w
-                "
-                class="team__member-picture"
-                src="./images/team/team-3-270@1x.jpg"
-                alt="Микола Тарасов"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3-1200@1x.jpg 1x,
+                    ./images/team/team-3-1200@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3-768@1x.jpg 1x,
+                    ./images/team/team-3-768@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
 
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3-480@1x.jpg 1x,
+                    ./images/team/team-3-480@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__member-picture"
+                  src="./images/team/team-3-480@1x.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="team__member-position">Marketing</p>
@@ -419,20 +484,42 @@
               </div>
             </li>
             <li class="team__item cards-set-item">
-              <img
-                srcset="
-                  ./images/team/team-4-270@1x.jpg 270w,
-                  ./images/team/team-4-354@1x.jpg 354w,
-                  ./images/team/team-4-450@1x.jpg 450w,
-                  ./images/team/team-4-540@2x.jpg 540w,
-                  ./images/team/team-4-708@2x.jpg 708w,
-                  ./images/team/team-4-900@2x.jpg 900w
-                "
-                class="team__member-picture"
-                src="./images/team/team-3-270@1x.jpg"
-                alt="Михайло Єрмаков"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4-1200@1x.jpg 1x,
+                    ./images/team/team-4-1200@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4-768@1x.jpg 1x,
+                    ./images/team/team-4-768@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4-480@1x.jpg 1x,
+                    ./images/team/team-4-480@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__member-picture"
+                  src="./images/team/team-4-480@1x.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="team__member-position">UI Designer</p>
